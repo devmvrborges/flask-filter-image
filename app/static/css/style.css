@@ -1,0 +1,25 @@
+/* app/static/css/style.css */
+.image-container {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    background-color: lightgrey;
+}
+
+.image-preview, .image-cropped, .cropped-filtred {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#cropped {
+    max-width: 300px;
+    max-height: 300px;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.center{
+    text-align: center;
+}

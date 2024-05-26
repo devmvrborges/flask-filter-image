@@ -1,0 +1,48 @@
+<!-- app/templates/index.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" />
+</head>
+
+<body>
+    <div class="center">
+        <h1>Welcome to my Flask app!</h1>
+    </div>
+    <div class="center"><input type="file" id="image" accept="image/*">
+    </div>
+    <div class="image-container">
+        <div class="image-preview">
+            <img id="preview" src="" alt="Image preview">
+        </div>
+        <div class="image-cropped">
+            <img id="cropped" src="" alt="Cropped image">
+        </div>
+    </div>
+    <div class="center">
+        <select id="gridSize">
+            <option value="32">32x32</option>
+            <option value="64">64x64</option>
+        </select>
+
+        <select id="resamplingMethod">
+            <option value="NEAREST">NEAREST</option>
+            <option value="BOX">BOX</option>
+            <option value="BILINEAR">BILINEAR</option>
+            <option value="HAMMING">HAMMING</option>
+            <option value="BICUBIC">BICUBIC</option>
+            <option value="LANCZOS">LANCZOS</option>
+        </select>
+
+        
+        <button id="upload">Aplicar filtro</button>
+        <img id="cropped-filtred" class="cropped-filtred" src="" alt="Cropped image">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
