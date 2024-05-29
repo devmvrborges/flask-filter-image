@@ -6,6 +6,15 @@
     <title>My Flask App</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" />
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import materialize.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Import jQuery before materialize.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Import Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 
 <body>
@@ -16,33 +25,120 @@
     </div>
     <div class="image-container">
         <div class="image-preview">
-            <img id="preview" src="" alt="Image preview">
+            <!-- TODO: BACK REAL IMAGE -->
+            <!-- <img id="preview" src="" alt="Image preview"> -->
+            <!-- TODO: BACK REAL IMAGE -->
+            <img id="cropped-filtred" class="cropped-filtred" src="../static/img.png" alt="Cropped image">
         </div>
         <div class="image-cropped">
-            <img id="cropped" src="" alt="Cropped image">
+            <!-- TODO: BACK REAL IMAGE -->
+            <!-- <img id="cropped" src="" alt="Cropped image"> -->
+            <!-- TODO: BACK REAL IMAGE -->
+            <img id="cropped-filtred" class="cropped-filtred" src="../static/img.png" alt="Cropped image">
+
         </div>
     </div>
-    <div class="center">
-        <select id="gridSize">
-            <option value="32">32x32</option>
-            <option value="64">64x64</option>
-        </select>
+    <br />
+    <div class="image-container">
+        <div class="box">
 
-        <select id="resamplingMethod">
-            <option value="NEAREST">NEAREST</option>
-            <option value="BOX">BOX</option>
-            <option value="BILINEAR">BILINEAR</option>
-            <option value="HAMMING">HAMMING</option>
-            <option value="BICUBIC">BICUBIC</option>
-            <option value="LANCZOS">LANCZOS</option>
-        </select>
+            <!-- TODO: BACK REAL IMAGE -->
+            <!-- <img id="cropped-filtred" class="cropped-filtred" src="" alt="Cropped image"> -->
+            <!-- TODO: BACK REAL IMAGE -->
+            <img id="cropped-filtred" class="cropped-filtred" src="../static/img.png" alt="Cropped image">
 
-        
-        <button id="upload">Aplicar filtro</button>
-        <img id="cropped-filtred" class="cropped-filtred" src="" alt="Cropped image">
+            <select id="gridSize">
+                <option value="32">32x32</option>
+                <option value="64">64x64</option>
+            </select>
+
+
+
+
+            <select id="resamplingMethod">
+                <option value="NEAREST">NEAREST</option>
+                <option value="BOX">BOX</option>
+                <option value="BILINEAR">BILINEAR</option>
+                <option value="HAMMING">HAMMING</option>
+                <option value="BICUBIC">BICUBIC</option>
+                <option value="LANCZOS">LANCZOS</option>
+            </select>
+        </div>
+        <div class="box">
+
+
+            <table class="highlight">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Cor</th>
+                        <th>Exemplo</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <div class="input-field col s12 m2">
+                                <select class="color1" id="color1" onchange="changeColor('color1')">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="red">black</option>
+                                    <option value="green">white</option>
+                                    <option value="blue">gray</option>
+                                </select>
+                                <label>Images in select</label>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div id="circle1" class="circle"></div>
+                        </td>
+                        <td>
+                            <div class="input-field col s6">
+                                <input id="input_text" type="number" data-length="10">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <div class="input-field col s12 m2">
+                                <select class="color2" id="color2" onchange="changeColor('color2')">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="red">black</option>
+                                    <option value="green">white</option>
+                                    <option value="blue">gray</option>
+                                </select>
+                                <label>Images in select</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="circle2" class="circle"></div>
+                        </td>
+                        <td>
+                            <div class="input-field col s6">
+                                <input id="input_text" type="number" data-length="10">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+
+
+
+        </div>
+        <div class="box">3</div>
+        <div class="box">4</div>
     </div>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
+
 
 </html>

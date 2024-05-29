@@ -4,6 +4,11 @@
     -webkit-box-pack: center;
     background-color: lightgrey;
 }
+.color-container {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    /* background-color: lightgrey; */
+}
 
 .image-preview, .image-cropped, .cropped-filtred {
     display: flex;
@@ -22,4 +27,20 @@
 
 .center{
     text-align: center;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+td, th{
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 2px;
+    padding: 0px 5px !important;
+    text-align: -webkit-center !important;
 }
