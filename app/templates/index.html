@@ -2,49 +2,170 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
     <title>My Flask App</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" />
-    <!-- Import Google Icon Font -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Import materialize.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Import jQuery before materialize.js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Import Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
-    <div class="center">
-        <h1>Welcome to my Flask app!</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    <div class="d-flex align-items-center">
+                                        <span class="material-icons">
+                                            looks_one
+                                        </span>
+                                        <span> Selecione a imagem</span>
+                                    </div>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                Selecione o arquivo:
+                                <input class="form-control" type="file" id="imageInput" accept="image/*">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    <div class="d-flex align-items-center">
+                                        <span class="material-icons">
+                                            looks_two
+                                        </span>
+                                        <span> Tamanho</span>
+                                    </div>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+
+                                <div class="form-group">
+                                    <label for="gridSize">Qual tamanho do quadro?</label>
+                                    <select class="form-control" id="gridSize">
+                                        <option value="" disabled selected>Selecione o tamanho</option>
+                                        <option value="32">32x32 - 25,5cm² - 1024 peças</option>
+                                        <option value="64">64x64 - 51cm² - 4096 peças</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="heading3">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <div class="d-flex align-items-center">
+                                        <span class="material-icons">
+                                            looks_3
+                                        </span>
+                                        <span> Interpolação da imagem</span>
+                                    </div>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse3" class="collapse" aria-labelledby="heading3"
+                            data-parent="#accordion">
+                            <div class="card-body">
+
+                                <input type="radio" id="nearest" name="interpolation" value="NEAREST" title="NEAREST">
+                                <label for="nearest">NEAREST</label>
+                                <br />
+                                <input type="radio" id="box" name="interpolation" value="BOX" title="BOX">
+                                <label for="box">BOX</label>
+                                <br />
+                                <input type="radio" id="bilinear" name="interpolation" value="BILINEAR"
+                                    title="BILINEAR">
+                                <label for="bilinear">BILINEAR</label>
+                                <br />
+                                <input type="radio" id="hamming" name="interpolation" value="HAMMING" title="HAMMING">
+                                <label for="hamming">HAMMING</label>
+                                <br />
+                                <input type="radio" id="bicubic" name="interpolation" value="BICUBIC" title="BICUBIC">
+                                <label for="bicubic">BICUBIC</label>
+                                <br />
+                                <input type="radio" id="lanczos" name="interpolation" value="LANCZOS" title="LANCZOS">
+                                <label for="lanczos">LANCZOS</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="heading4">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4"
+                                    aria-expanded="false" aria-controls="collapse4">
+                                    <div class="d-flex align-items-center">
+                                        <span class="material-icons">
+                                            looks_4
+                                        </span>
+                                        <span> Cores</span>
+                                    </div>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+                            <div class="card-body">
+
+                                <div class="form-group">
+                                    <label for="gridSize">Qual tamanho do quadro?</label>
+                                    <select class="form-control" id="gridSize">
+                                        <option value="" disabled selected>Selecione o tamanho</option>
+                                        <option value="32">32x32 - 25,5cm² - 1024 peças</option>
+                                        <option value="64">64x64 - 51cm² - 4096 peças</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-md-7">
+                <img id="preview" src="" alt="Image preview">
+                <img id="hidden-preview" src="" alt="Image preview" style="display: none;">
+               
+            </div>
+        </div>
     </div>
-    <div class="center"><input type="file" id="image" accept="image/*">
-    </div>
-    <div class="image-container">
+    <!-- <div class="image-container">
         <div class="image-preview">
-            <!-- TODO: BACK REAL IMAGE -->
-            <!-- <img id="preview" src="" alt="Image preview"> -->
-            <!-- TODO: BACK REAL IMAGE -->
+
             <img id="cropped-filtred" class="cropped-filtred" src="../static/img.png" alt="Cropped image">
         </div>
         <div class="image-cropped">
-            <!-- TODO: BACK REAL IMAGE -->
-            <!-- <img id="cropped" src="" alt="Cropped image"> -->
-            <!-- TODO: BACK REAL IMAGE -->
+          
             <img id="cropped-filtred" class="cropped-filtred" src="../static/img.png" alt="Cropped image">
-
         </div>
     </div>
     <br />
     <div class="image-container">
         <div class="box">
 
-            <!-- TODO: BACK REAL IMAGE -->
-            <!-- <img id="cropped-filtred" class="cropped-filtred" src="" alt="Cropped image"> -->
-            <!-- TODO: BACK REAL IMAGE -->
+
             <img id="cropped-filtred" class="cropped-filtred" src="../static/img.png" alt="Cropped image">
 
             <select id="gridSize">
@@ -133,7 +254,7 @@
         </div>
         <div class="box">3</div>
         <div class="box">4</div>
-    </div>
+    </div> -->
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>

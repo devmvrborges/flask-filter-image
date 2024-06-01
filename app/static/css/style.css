@@ -44,3 +44,27 @@ td, th{
     padding: 0px 5px !important;
     text-align: -webkit-center !important;
 }
+
+.card-header{
+    padding: 0px !important;
+}
+
+.btn-link{
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.btn-link:hover{
+    text-decoration: none !important;
+}
+
+.form-control{
+    height: 100% !important;
+}
+
+#preview{
+    max-width: 500px !important;
+    max-height: 500px !important;
+    min-width: 500px;
+    min-height: 500px;
+}

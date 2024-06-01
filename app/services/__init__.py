@@ -1,1 +1,2 @@
-from .image_service import apply_filter
+from .image_service import apply_size
+from .image_service import apply_interpolation
