@@ -1,0 +1,418 @@
+[
+    {
+        "Nome": "White",
+        "TIPO": "L01",
+        "RAW": "rgb(201, 199, 195)",
+        "Red": 201,
+        "Green": 199,
+        "Blue": 195
+    },
+    {
+        "Nome": "Light Light Gray",
+        "TIPO": "L02",
+        "RAW": "rgb(211, 214, 213)",
+        "Red": 211,
+        "Green": 214,
+        "Blue": 213
+    },
+    {
+        "Nome": "Light Gray",
+        "TIPO": "L03",
+        "RAW": "rgb(167, 172, 169)",
+        "Red": 167,
+        "Green": 172,
+        "Blue": 169
+    },
+    {
+        "Nome": "Dark Pink",
+        "TIPO": "L28",
+        "RAW": "rgb(217, 100, 171)",
+        "Red": 217,
+        "Green": 100,
+        "Blue": 171
+    },
+    {
+        "Nome": "Orange",
+        "TIPO": "L25",
+        "RAW": "rgb(208, 133, 63)",
+        "Red": 208,
+        "Green": 133,
+        "Blue": 63
+    },
+    {
+        "Nome": "Dark Gray",
+        "TIPO": "L04",
+        "RAW": "rgb(136, 143, 143)",
+        "Red": 136,
+        "Green": 143,
+        "Blue": 143
+    },
+    {
+        "Nome": "Dark Dark Gray",
+        "TIPO": "L05",
+        "RAW": "rgb(115, 113, 109)",
+        "Red": 115,
+        "Green": 113,
+        "Blue": 109
+    },
+    {
+        "Nome": "Black",
+        "TIPO": "L06",
+        "RAW": "rgb(61, 64, 67)",
+        "Red": 61,
+        "Green": 64,
+        "Blue": 67
+    },
+    {
+        "Nome": "Light Royal Blue",
+        "TIPO": "L07",
+        "RAW": "rgb(151, 157, 167)",
+        "Red": 151,
+        "Green": 157,
+        "Blue": 167
+    },
+    {
+        "Nome": "Black Gray",
+        "TIPO": "L08",
+        "RAW": "rgb(90, 90, 102)",
+        "Red": 90,
+        "Green": 90,
+        "Blue": 102
+    },
+    {
+        "Nome": "Skin White",
+        "TIPO": "L09",
+        "RAW": "rgb(176, 175, 169)",
+        "Red": 176,
+        "Green": 175,
+        "Blue": 169
+    },
+    {
+        "Nome": "Flesh Pink",
+        "TIPO": "L10",
+        "RAW": "rgb(188, 184, 174)",
+        "Red": 188,
+        "Green": 184,
+        "Blue": 174
+    },
+    {
+        "Nome": "Light Flesh",
+        "TIPO": "L11",
+        "RAW": "rgb(200, 179, 155)",
+        "Red": 200,
+        "Green": 179,
+        "Blue": 155
+    },
+    {
+        "Nome": "Flesh Tan",
+        "TIPO": "L12",
+        "RAW": "rgb(194, 172, 138)",
+        "Red": 194,
+        "Green": 172,
+        "Blue": 138
+    },
+    {
+        "Nome": "Flesh Red",
+        "TIPO": "L13",
+        "RAW": "rgb(202, 167, 144)",
+        "Red": 202,
+        "Green": 167,
+        "Blue": 144
+    },
+    {
+        "Nome": "Nougat",
+        "TIPO": "L14",
+        "RAW": "rgb(214, 149, 98)",
+        "Red": 214,
+        "Green": 149,
+        "Blue": 98
+    },
+    {
+        "Nome": "Medium Dark Flesh",
+        "TIPO": "L15",
+        "RAW": "rgb(216, 161, 148)",
+        "Red": 216,
+        "Green": 161,
+        "Blue": 148
+    },
+    {
+        "Nome": "Dark Orange",
+        "TIPO": "L16",
+        "RAW": "rgb(196, 96, 52)",
+        "Red": 196,
+        "Green": 96,
+        "Blue": 52
+    },
+    {
+        "Nome": "Bright Green",
+        "TIPO": "L49",
+        "RAW": "rgb(19, 174, 46)",
+        "Red": 19,
+        "Green": 174,
+        "Blue": 46
+    },
+    {
+        "Nome": "Dark Brown",
+        "TIPO": "L18",
+        "RAW": "rgb(105, 72, 56)",
+        "Red": 105,
+        "Green": 72,
+        "Blue": 56
+    },
+    {
+        "Nome": "Tan",
+        "TIPO": "L19",
+        "RAW": "rgb(197, 187, 154)",
+        "Red": 197,
+        "Green": 187,
+        "Blue": 154
+    },
+    {
+        "Nome": "Dark Tan",
+        "TIPO": "L20",
+        "RAW": "rgb(146, 128, 82)",
+        "Red": 146,
+        "Green": 128,
+        "Blue": 82
+    },
+    {
+        "Nome": "Bright Yellow",
+        "TIPO": "L21",
+        "RAW": "rgb(219, 203, 104)",
+        "Red": 219,
+        "Green": 203,
+        "Blue": 104
+    },
+    {
+        "Nome": "Yellow",
+        "TIPO": "L22",
+        "RAW": "rgb(199, 172, 1)",
+        "Red": 199,
+        "Green": 172,
+        "Blue": 1
+    },
+    {
+        "Nome": "Dark Yellow",
+        "TIPO": "L23",
+        "RAW": "rgb(168, 113, 20)",
+        "Red": 168,
+        "Green": 113,
+        "Blue": 20
+    },
+    {
+        "Nome": "Bright Orange",
+        "TIPO": "L24",
+        "RAW": "rgb(198, 146, 2)",
+        "Red": 198,
+        "Green": 146,
+        "Blue": 2
+    },
+    {
+        "Nome": "Light Pink",
+        "TIPO": "L26",
+        "RAW": "rgb(232, 193, 204)",
+        "Red": 232,
+        "Green": 193,
+        "Blue": 204
+    },
+    {
+        "Nome": "Bright Pink",
+        "TIPO": "L27",
+        "RAW": "rgb(199, 132, 171)",
+        "Red": 199,
+        "Green": 132,
+        "Blue": 171
+    },
+    {
+        "Nome": "Magenta",
+        "TIPO": "L29",
+        "RAW": "rgb(173, 66, 134)",
+        "Red": 173,
+        "Green": 66,
+        "Blue": 134
+    },
+    {
+        "Nome": "Red",
+        "TIPO": "L30",
+        "RAW": "rgb(207, 46, 25)",
+        "Red": 207,
+        "Green": 46,
+        "Blue": 25
+    },
+    {
+        "Nome": "Dark Red",
+        "TIPO": "L31",
+        "RAW": "rgb(167, 48, 38)",
+        "Red": 167,
+        "Green": 48,
+        "Blue": 38
+    },
+    {
+        "Nome": "Sand Red",
+        "TIPO": "L32",
+        "RAW": "rgb(181, 142, 132)",
+        "Red": 181,
+        "Green": 142,
+        "Blue": 132
+    },
+    {
+        "Nome": "Medium Lavender",
+        "TIPO": "L33",
+        "RAW": "rgb(152, 135, 180)",
+        "Red": 152,
+        "Green": 135,
+        "Blue": 180
+    },
+    {
+        "Nome": "Purple",
+        "TIPO": "L34",
+        "RAW": "rgb(153, 108, 167)",
+        "Red": 153,
+        "Green": 108,
+        "Blue": 167
+    },
+    {
+        "Nome": "Dark Purple",
+        "TIPO": "L35",
+        "RAW": "rgb(99, 77, 169)",
+        "Red": 99,
+        "Green": 77,
+        "Blue": 169
+    },
+    {
+        "Nome": "Medium Blue",
+        "TIPO": "L36",
+        "RAW": "rgb(125, 173, 200)",
+        "Red": 125,
+        "Green": 173,
+        "Blue": 200
+    },
+    {
+        "Nome": "Medium Azure",
+        "TIPO": "L37",
+        "RAW": "rgb(83, 131, 171)",
+        "Red": 83,
+        "Green": 131,
+        "Blue": 171
+    },
+    {
+        "Nome": "Navy Blue",
+        "TIPO": "L38",
+        "RAW": "rgb(47, 159, 183)",
+        "Red": 47,
+        "Green": 159,
+        "Blue": 183
+    },
+    {
+        "Nome": "Dark Azure",
+        "TIPO": "L39",
+        "RAW": "rgb(66, 126, 177)",
+        "Red": 66,
+        "Green": 126,
+        "Blue": 177
+    },
+    {
+        "Nome": "Bright Light Blue",
+        "TIPO": "L40",
+        "RAW": "rgb(20, 168, 193)",
+        "Red": 20,
+        "Green": 168,
+        "Blue": 193
+    },
+    {
+        "Nome": "Blue",
+        "TIPO": "L41",
+        "RAW": "rgb(4, 68, 181)",
+        "Red": 4,
+        "Green": 68,
+        "Blue": 181
+    },
+    {
+        "Nome": "Dark Blue",
+        "TIPO": "L42",
+        "RAW": "rgb(18, 53, 117)",
+        "Red": 18,
+        "Green": 53,
+        "Blue": 117
+    },
+    {
+        "Nome": "Sand Blue",
+        "TIPO": "L43",
+        "RAW": "rgb(110, 136, 157)",
+        "Red": 110,
+        "Green": 136,
+        "Blue": 157
+    },
+    {
+        "Nome": "Yellowish Green",
+        "TIPO": "L44",
+        "RAW": "rgb(132, 161, 83)",
+        "Red": 132,
+        "Green": 161,
+        "Blue": 83
+    },
+    {
+        "Nome": "Lime",
+        "TIPO": "L45",
+        "RAW": "rgb(104, 143, 5)",
+        "Red": 104,
+        "Green": 143,
+        "Blue": 5
+    },
+    {
+        "Nome": "Olive Green",
+        "TIPO": "L46",
+        "RAW": "rgb(153, 152, 102)",
+        "Red": 153,
+        "Green": 152,
+        "Blue": 102
+    },
+    {
+        "Nome": "Sand Green",
+        "TIPO": "L47",
+        "RAW": "rgb(104, 117, 92)",
+        "Red": 104,
+        "Green": 117,
+        "Blue": 92
+    },
+    {
+        "Nome": "Light Aqua",
+        "TIPO": "L48",
+        "RAW": "rgb(44, 167, 169)",
+        "Red": 44,
+        "Green": 167,
+        "Blue": 169
+    },
+    {
+        "Nome": "Brown",
+        "TIPO": "L17",
+        "RAW": "rgb(153, 113, 92)",
+        "Red": 153,
+        "Green": 113,
+        "Blue": 92
+    },
+    {
+        "Nome": "Green",
+        "TIPO": "L50",
+        "RAW": "rgb(22, 140, 70)",
+        "Red": 22,
+        "Green": 140,
+        "Blue": 70
+    },
+    {
+        "Nome": "Dark Green",
+        "TIPO": "L51",
+        "RAW": "rgb(56, 114, 83)",
+        "Red": 56,
+        "Green": 114,
+        "Blue": 83
+    },
+    {
+        "Nome": "Army Green",
+        "TIPO": "L52",
+        "RAW": "rgb(62, 75, 55)",
+        "Red": 62,
+        "Green": 75,
+        "Blue": 55
+    }
+]

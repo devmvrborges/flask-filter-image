@@ -7,11 +7,27 @@
     <title>My Flask App</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Inclua jQuery primeiro -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Em seguida, inclua Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+
+    <!-- Finalmente, inclua o Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+    <!-- <script src="http://getbootstrap.com/2.3.2/assets/js/bootstrap-dropdown.js"></script> -->
+    <!-- <link href="http://getbootstrap.com/2.3.2/assets/css/bootstrap.css" rel="stylesheet"/> -->
+    <!--     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script> -->
 
 </head>
 
@@ -74,8 +90,8 @@
                     <div class="card">
                         <div class="card-header" id="heading3">
                             <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3"
+                                    aria-expanded="false" aria-controls="collapse3">
                                     <div class="d-flex align-items-center">
                                         <span class="material-icons">
                                             looks_3
@@ -85,8 +101,7 @@
                                 </button>
                             </h5>
                         </div>
-                        <div id="collapse3" class="collapse" aria-labelledby="heading3"
-                            data-parent="#accordion">
+                        <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
                             <div class="card-body">
 
                                 <input type="radio" id="nearest" name="interpolation" value="NEAREST" title="NEAREST">
@@ -129,12 +144,39 @@
                             <div class="card-body">
 
                                 <div class="form-group">
-                                    <label for="gridSize">Qual tamanho do quadro?</label>
-                                    <select class="form-control" id="gridSize">
+
+
+                                    <label for="customRange2" class="form-label">Example range</label>
+                                    <input type="range" class="form-range" min="5" max="52" id="customRange2">
+                                    <label id="rangeValue"></label>
+
+
+                                    <div class="table-responsive">
+                                        <table>
+                                            <tbody>
+                                                <!-- As linhas da tabela serão preenchidas pelo JavaScript -->
+                                            </tbody>
+                                        </table>
+
+                                        <!-- <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Cor</th>
+                                                    <th>Nome</th>
+                                                    <th>Quantidade</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table> -->
+                                    </div>
+
+
+                                    <!-- <select class="form-control" id="gridSize">
                                         <option value="" disabled selected>Selecione o tamanho</option>
                                         <option value="32">32x32 - 25,5cm² - 1024 peças</option>
                                         <option value="64">64x64 - 51cm² - 4096 peças</option>
-                                    </select>
+                                    </select> -->
                                 </div>
 
                             </div>
@@ -147,9 +189,18 @@
             <div class="col-md-7">
                 <img id="preview" src="" alt="Image preview">
                 <img id="hidden-preview" src="" alt="Image preview" style="display: none;">
-               
+
+                <!-- <div class="dropdown-content">
+                        <a href="#">
+               </select>             <div id="circle2" class="circle"></div> Preto
+                        </a>
+                        <a href="#">
+                            <div id="circle2" class="circle"></div> Branco
+                        </a>
+                    </div> -->
             </div>
         </div>
+    </div>
     </div>
     <!-- <div class="image-container">
         <div class="image-preview">

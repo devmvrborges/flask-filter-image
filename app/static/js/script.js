@@ -1,26 +1,20 @@
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-})
-
 window.addEventListener('DOMContentLoaded', function () {
     var image = document.getElementById('preview');
     var input = document.getElementById('imageInput');
     var imageBackup = document.getElementById('hidden-preview');
     var gridSizeSelect = document.getElementById('gridSize');
+    var rangeColors = document.getElementById('customRange2');
     var radioButtons = document.querySelectorAll('input[name="interpolation"]');
     var cropper;
+    var currentBlob;
 
-    
     radioButtons.forEach(function (radioButton) {
         radioButton.addEventListener('change', function () {
             if (this.checked) {
-                console.log('Selected radio button:', this.value);
                 updateStep2(this.value)
             }
         });
     });
-
-
 
     input.addEventListener('change', function () {
         var file = this.files[0];
@@ -59,7 +53,6 @@ window.addEventListener('DOMContentLoaded', function () {
         radioButtons.forEach(function (radioButton) {
             radioButton.checked = false;
         });
-
 
         imageBackup.src = url;
     });
@@ -105,16 +98,12 @@ window.addEventListener('DOMContentLoaded', function () {
 
     }
 
-
-
-
-
-
-
     function updateStep2(interpolation) {
         var formData = new FormData();
         var url_backup = document.getElementById('hidden-preview').src;
         var gridSize = document.getElementById('gridSize').value;
+        console.log(url_backup);
+        currentBlob = url_backup;
 
         fetch(url_backup)
             .then(response => response.blob())
@@ -133,6 +122,7 @@ window.addEventListener('DOMContentLoaded', function () {
             .then(response => response.blob())
             .then(blob => {
                 image.src = URL.createObjectURL(blob);
+                currentBlob = image.src;
             })
             .catch(error => {
                 console.error('Error:', error);
@@ -140,4 +130,91 @@ window.addEventListener('DOMContentLoaded', function () {
             });
     }
 
+    rangeColors.addEventListener('change', function () {
+        document.getElementById('rangeValue').textContent = this.value;
+
+        updateStep3(this.value);
+    });
+
+    // rangeColors.addEventListener('change', function () {
+    //     updateStep3(this.value);
+
+
+    //     //     var previewContent = document.getElementById('preview').src;
+    //     //     // console.log('previewContesnt:', previewContent);
+
+    //     //     var xhr = new XMLHttpRequest();
+    //     //     xhr.open('POST', '/get_colors', true);
+    //     //     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    //     //     xhr.onload = function() {
+    //     //         if (this.status == 200) {
+    //     //             var data = JSON.parse(this.responseText).data;
+    //     //             var tbody = document.querySelector('tbody');
+    //     //             tbody.innerHTML = '';
+    //     //             data.forEach(function(item) {
+    //     //                 var tr = document.createElement('tr');
+
+    //     //                 var td1 = document.createElement('td');
+    //     //                 var label1 = document.createElement('label');
+    //     //                 label1.textContent = item.name;
+    //     //                 td1.appendChild(label1);
+
+    //     //                 var td2 = document.createElement('td');
+    //     //                 var div = document.createElement('div');
+    //     //                 div.className = 'circle';
+    //     //                 div.style.backgroundColor = item.color;
+    //     //                 td2.appendChild(div);
+
+    //     //                 var td3 = document.createElement('td');
+    //     //                 var label2 = document.createElement('label');
+    //     //                 label2.textContent = item.value;
+    //     //                 td3.appendChild(label2);
+
+    //     //                 tr.appendChild(td1);
+    //     //                 tr.appendChild(td2);
+    //     //                 tr.appendChild(td3);
+
+    //     //                 tbody.appendChild(tr);
+    //     //             });
+    //     //         }
+    //     //     };
+
+    //     //     var blob = fetch(previewContent)
+    //     //         .then(response => response.blob())
+    //     //         .then(blob => {
+    //     //             var formData = new FormData();
+    //     //             formData.append('rangeValue', this.value);
+    //     //             formData.append('previewContent', blob);
+    //     //             xhr.send(formData);
+    //     //         })
+    //     //         .catch(error => {
+    //     //             console.error('Error:', error);
+    //     //             alert('Image processing failed');
+    //     //         });
+    // });
+    function updateStep3(colors) {
+        var formData = new FormData();
+        // var url_backup = image;
+        console.log(currentBlob);
+
+        fetch(currentBlob)
+            .then(response => response.blob())
+            .then(blob => {
+                formData.append('file', blob);
+                formData.append('colors', colors);
+
+                return fetch('/get_colors', {
+                    method: 'POST',
+                    body: formData
+                });
+            })
+            .then(response => response.blob())
+            .then(blob => {
+                image.src = URL.createObjectURL(blob);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Image processing failed');
+            });
+    }
 });
