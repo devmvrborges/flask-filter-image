@@ -2,23 +2,23 @@
     {
         "Nome": "White",
         "TIPO": "L01",
-        "RAW": "rgb(201, 199, 195)",
-        "Red": 201,
-        "Green": 199,
-        "Blue": 195
+        "RAW": "rgb(255, 255, 255)",
+        "Red": 255,
+        "Green": 255,
+        "Blue": 255
     },
     {
         "Nome": "Light Light Gray",
         "TIPO": "L02",
-        "RAW": "rgb(211, 214, 213)",
-        "Red": 211,
-        "Green": 214,
-        "Blue": 213
+        "RAW": "rgb(232, 232, 232)",
+        "Red": 232,
+        "Green": 232,
+        "Blue": 232
     },
     {
         "Nome": "Light Gray",
         "TIPO": "L03",
-        "RAW": "rgb(167, 172, 169)",
+        "RAW": "rgb(156, 156, 156)",
         "Red": 167,
         "Green": 172,
         "Blue": 169
@@ -26,50 +26,50 @@
     {
         "Nome": "Dark Pink",
         "TIPO": "L28",
-        "RAW": "rgb(217, 100, 171)",
-        "Red": 217,
-        "Green": 100,
-        "Blue": 171
+        "RAW": "rgb(200, 112, 128)",
+        "Red": 200,
+        "Green": 112,
+        "Blue": 128
     },
     {
         "Nome": "Orange",
         "TIPO": "L25",
-        "RAW": "rgb(208, 133, 63)",
-        "Red": 208,
-        "Green": 133,
-        "Blue": 63
+        "RAW": "rgb(255, 126, 20)",
+        "Red": 255,
+        "Green": 126,
+        "Blue": 20
     },
     {
         "Nome": "Dark Gray",
         "TIPO": "L04",
-        "RAW": "rgb(136, 143, 143)",
-        "Red": 136,
-        "Green": 143,
-        "Blue": 143
+        "RAW": "rgb(107, 90, 90)",
+        "Red": 107,
+        "Green": 90,
+        "Blue": 90
     },
     {
         "Nome": "Dark Dark Gray",
         "TIPO": "L05",
-        "RAW": "rgb(115, 113, 109)",
-        "Red": 115,
-        "Green": 113,
-        "Blue": 109
+        "RAW": "rgb(89, 93, 96)",
+        "Red": 89,
+        "Green": 93,
+        "Blue": 96
     },
     {
         "Nome": "Black",
         "TIPO": "L06",
-        "RAW": "rgb(61, 64, 67)",
-        "Red": 61,
-        "Green": 64,
-        "Blue": 67
+        "RAW": "rgb(33, 33, 33)",
+        "Red": 33,
+        "Green": 33,
+        "Blue": 33
     },
     {
         "Nome": "Light Royal Blue",
         "TIPO": "L07",
-        "RAW": "rgb(151, 157, 167)",
-        "Red": 151,
-        "Green": 157,
-        "Blue": 167
+        "RAW": "rgb(175, 181, 199)",
+        "Red": 175,
+        "Green": 181,
+        "Blue": 199
     },
     {
         "Nome": "Black Gray",
@@ -88,7 +88,7 @@
         "Blue": 169
     },
     {
-        "Nome": "Flesh Pink",
+        "Nome": "Flesh Pink ",
         "TIPO": "L10",
         "RAW": "rgb(188, 184, 174)",
         "Red": 188,
@@ -96,7 +96,7 @@
         "Blue": 174
     },
     {
-        "Nome": "Light Flesh",
+        "Nome": "Light Flesh ",
         "TIPO": "L11",
         "RAW": "rgb(200, 179, 155)",
         "Red": 200,
@@ -104,7 +104,7 @@
         "Blue": 155
     },
     {
-        "Nome": "Flesh Tan",
+        "Nome": "Flesh Tan ",
         "TIPO": "L12",
         "RAW": "rgb(194, 172, 138)",
         "Red": 194,
@@ -112,7 +112,7 @@
         "Blue": 138
     },
     {
-        "Nome": "Flesh Red",
+        "Nome": "Flesh Red ",
         "TIPO": "L13",
         "RAW": "rgb(202, 167, 144)",
         "Red": 202,
@@ -122,13 +122,13 @@
     {
         "Nome": "Nougat",
         "TIPO": "L14",
-        "RAW": "rgb(214, 149, 98)",
-        "Red": 214,
-        "Green": 149,
-        "Blue": 98
+        "RAW": "rgb(255, 175, 175)",
+        "Red": 255,
+        "Green": 175,
+        "Blue": 175
     },
     {
-        "Nome": "Medium Dark Flesh",
+        "Nome": "Medium Dark Flesh ",
         "TIPO": "L15",
         "RAW": "rgb(216, 161, 148)",
         "Red": 216,
@@ -138,45 +138,45 @@
     {
         "Nome": "Dark Orange",
         "TIPO": "L16",
-        "RAW": "rgb(196, 96, 52)",
-        "Red": 196,
-        "Green": 96,
-        "Blue": 52
+        "RAW": "rgb(179, 84, 8)",
+        "Red": 179,
+        "Green": 84,
+        "Blue": 8
     },
     {
         "Nome": "Bright Green",
         "TIPO": "L49",
-        "RAW": "rgb(19, 174, 46)",
-        "Red": 19,
-        "Green": 174,
-        "Blue": 46
+        "RAW": "rgb(16, 203, 49)",
+        "Red": 16,
+        "Green": 203,
+        "Blue": 49
     },
     {
         "Nome": "Dark Brown",
         "TIPO": "L18",
-        "RAW": "rgb(105, 72, 56)",
-        "Red": 105,
-        "Green": 72,
-        "Blue": 56
+        "RAW": "rgb(51, 0, 0)",
+        "Red": 51,
+        "Green": 0,
+        "Blue": 0
     },
     {
         "Nome": "Tan",
         "TIPO": "L19",
-        "RAW": "rgb(197, 187, 154)",
-        "Red": 197,
-        "Green": 187,
-        "Blue": 154
+        "RAW": "rgb(222, 198, 156)",
+        "Red": 222,
+        "Green": 198,
+        "Blue": 156
     },
     {
         "Nome": "Dark Tan",
         "TIPO": "L20",
-        "RAW": "rgb(146, 128, 82)",
-        "Red": 146,
-        "Green": 128,
-        "Blue": 82
+        "RAW": "rgb(144, 116, 80)",
+        "Red": 144,
+        "Green": 116,
+        "Blue": 80
     },
     {
-        "Nome": "Bright Yellow",
+        "Nome": "Bright Yellow ",
         "TIPO": "L21",
         "RAW": "rgb(219, 203, 104)",
         "Red": 219,
@@ -186,21 +186,21 @@
     {
         "Nome": "Yellow",
         "TIPO": "L22",
-        "RAW": "rgb(199, 172, 1)",
-        "Red": 199,
-        "Green": 172,
-        "Blue": 1
+        "RAW": "rgb(247, 209, 23)",
+        "Red": 247,
+        "Green": 209,
+        "Blue": 23
     },
     {
         "Nome": "Dark Yellow",
         "TIPO": "L23",
-        "RAW": "rgb(168, 113, 20)",
-        "Red": 168,
-        "Green": 113,
-        "Blue": 20
+        "RAW": "rgb(221, 152, 46)",
+        "Red": 221,
+        "Green": 152,
+        "Blue": 46
     },
     {
-        "Nome": "Bright Orange",
+        "Nome": "Bright Orange ",
         "TIPO": "L24",
         "RAW": "rgb(198, 146, 2)",
         "Red": 198,
@@ -210,93 +210,93 @@
     {
         "Nome": "Light Pink",
         "TIPO": "L26",
-        "RAW": "rgb(232, 193, 204)",
-        "Red": 232,
-        "Green": 193,
-        "Blue": 204
+        "RAW": "rgb(255, 225, 255)",
+        "Red": 255,
+        "Green": 225,
+        "Blue": 255
     },
     {
         "Nome": "Bright Pink",
         "TIPO": "L27",
-        "RAW": "rgb(199, 132, 171)",
-        "Red": 199,
-        "Green": 132,
-        "Blue": 171
+        "RAW": "rgb(255, 187, 255)",
+        "Red": 255,
+        "Green": 187,
+        "Blue": 255
     },
     {
         "Nome": "Magenta",
         "TIPO": "L29",
-        "RAW": "rgb(173, 66, 134)",
-        "Red": 173,
-        "Green": 66,
-        "Blue": 134
+        "RAW": "rgb(181, 41, 82)",
+        "Red": 181,
+        "Green": 41,
+        "Blue": 82
     },
     {
         "Nome": "Red",
         "TIPO": "L30",
-        "RAW": "rgb(207, 46, 25)",
-        "Red": 207,
-        "Green": 46,
-        "Blue": 25
+        "RAW": "rgb(179, 0, 6)",
+        "Red": 179,
+        "Green": 0,
+        "Blue": 6
     },
     {
         "Nome": "Dark Red",
         "TIPO": "L31",
-        "RAW": "rgb(167, 48, 38)",
-        "Red": 167,
-        "Green": 48,
-        "Blue": 38
+        "RAW": "rgb(106, 14, 21)",
+        "Red": 106,
+        "Green": 14,
+        "Blue": 21
     },
     {
         "Nome": "Sand Red",
         "TIPO": "L32",
-        "RAW": "rgb(181, 142, 132)",
-        "Red": 181,
-        "Green": 142,
-        "Blue": 132
+        "RAW": "rgb(140, 107, 107)",
+        "Red": 140,
+        "Green": 107,
+        "Blue": 107
     },
     {
         "Nome": "Medium Lavender",
         "TIPO": "L33",
-        "RAW": "rgb(152, 135, 180)",
-        "Red": 152,
-        "Green": 135,
-        "Blue": 180
+        "RAW": "rgb(136, 94, 158)",
+        "Red": 136,
+        "Green": 94,
+        "Blue": 158
     },
     {
         "Nome": "Purple",
         "TIPO": "L34",
-        "RAW": "rgb(153, 108, 167)",
-        "Red": 153,
-        "Green": 108,
-        "Blue": 167
+        "RAW": "rgb(165, 73, 156)",
+        "Red": 168,
+        "Green": 73,
+        "Blue": 156
     },
     {
         "Nome": "Dark Purple",
         "TIPO": "L35",
-        "RAW": "rgb(99, 77, 169)",
-        "Red": 99,
-        "Green": 77,
-        "Blue": 169
+        "RAW": "rgb(95, 38, 131)",
+        "Red": 95,
+        "Green": 38,
+        "Blue": 131
     },
     {
         "Nome": "Medium Blue",
         "TIPO": "L36",
-        "RAW": "rgb(125, 173, 200)",
-        "Red": 125,
-        "Green": 173,
-        "Blue": 200
+        "RAW": "rgb(97, 175, 255)",
+        "Red": 97,
+        "Green": 175,
+        "Blue": 255
     },
     {
         "Nome": "Medium Azure",
         "TIPO": "L37",
-        "RAW": "rgb(83, 131, 171)",
-        "Red": 83,
-        "Green": 131,
-        "Blue": 171
+        "RAW": "rgb(66, 192, 251)",
+        "Red": 66,
+        "Green": 192,
+        "Blue": 251
     },
     {
-        "Nome": "Navy Blue",
+        "Nome": "Navy Blue ",
         "TIPO": "L38",
         "RAW": "rgb(47, 159, 183)",
         "Red": 47,
@@ -306,109 +306,109 @@
     {
         "Nome": "Dark Azure",
         "TIPO": "L39",
-        "RAW": "rgb(66, 126, 177)",
-        "Red": 66,
-        "Green": 126,
-        "Blue": 177
+        "RAW": "rgb(51, 153, 255)",
+        "Red": 51,
+        "Green": 153,
+        "Blue": 255
     },
     {
         "Nome": "Bright Light Blue",
         "TIPO": "L40",
-        "RAW": "rgb(20, 168, 193)",
-        "Red": 20,
-        "Green": 168,
-        "Blue": 193
+        "RAW": "rgb(159, 195, 233)",
+        "Red": 159,
+        "Green": 195,
+        "Blue": 233
     },
     {
         "Nome": "Blue",
         "TIPO": "L41",
-        "RAW": "rgb(4, 68, 181)",
-        "Red": 4,
-        "Green": 68,
-        "Blue": 181
+        "RAW": "rgb(0, 87, 166)",
+        "Red": 0,
+        "Green": 87,
+        "Blue": 166
     },
     {
         "Nome": "Dark Blue",
         "TIPO": "L42",
-        "RAW": "rgb(18, 53, 117)",
-        "Red": 18,
-        "Green": 53,
-        "Blue": 117
+        "RAW": "rgb(20, 48, 68)",
+        "Red": 20,
+        "Green": 48,
+        "Blue": 68
     },
     {
         "Nome": "Sand Blue",
         "TIPO": "L43",
-        "RAW": "rgb(110, 136, 157)",
-        "Red": 110,
-        "Green": 136,
-        "Blue": 157
+        "RAW": "rgb(90, 113, 132)",
+        "Red": 90,
+        "Green": 113,
+        "Blue": 132
     },
     {
         "Nome": "Yellowish Green",
         "TIPO": "L44",
-        "RAW": "rgb(132, 161, 83)",
-        "Red": 132,
-        "Green": 161,
-        "Blue": 83
+        "RAW": "rgb(223, 238, 165)",
+        "Red": 223,
+        "Green": 238,
+        "Blue": 165
     },
     {
         "Nome": "Lime",
         "TIPO": "L45",
-        "RAW": "rgb(104, 143, 5)",
-        "Red": 104,
-        "Green": 143,
-        "Blue": 5
+        "RAW": "rgb(166, 202, 85)",
+        "Red": 166,
+        "Green": 202,
+        "Blue": 85
     },
     {
         "Nome": "Olive Green",
         "TIPO": "L46",
-        "RAW": "rgb(153, 152, 102)",
-        "Red": 153,
-        "Green": 152,
-        "Blue": 102
+        "RAW": "rgb(124, 144, 81)",
+        "Red": 124,
+        "Green": 144,
+        "Blue": 81
     },
     {
         "Nome": "Sand Green",
         "TIPO": "L47",
-        "RAW": "rgb(104, 117, 92)",
-        "Red": 104,
-        "Green": 117,
-        "Blue": 92
+        "RAW": "rgb(118, 162, 144)",
+        "Red": 118,
+        "Green": 162,
+        "Blue": 144
     },
     {
         "Nome": "Light Aqua",
         "TIPO": "L48",
-        "RAW": "rgb(44, 167, 169)",
-        "Red": 44,
-        "Green": 167,
-        "Blue": 169
+        "RAW": "rgb(204, 255, 255)",
+        "Red": 204,
+        "Green": 255,
+        "Blue": 255
     },
     {
         "Nome": "Brown",
         "TIPO": "L17",
-        "RAW": "rgb(153, 113, 92)",
-        "Red": 153,
-        "Green": 113,
-        "Blue": 92
+        "RAW": "rgb(83, 33, 21)",
+        "Red": 83,
+        "Green": 33,
+        "Blue": 21
     },
     {
         "Nome": "Green",
         "TIPO": "L50",
-        "RAW": "rgb(22, 140, 70)",
-        "Red": 22,
-        "Green": 140,
-        "Blue": 70
+        "RAW": "rgb(0, 100, 46)",
+        "Red": 0,
+        "Green": 100,
+        "Blue": 46
     },
     {
         "Nome": "Dark Green",
         "TIPO": "L51",
-        "RAW": "rgb(56, 114, 83)",
-        "Red": 56,
-        "Green": 114,
-        "Blue": 83
+        "RAW": "rgb(46, 85, 67)",
+        "Red": 46,
+        "Green": 85,
+        "Blue": 67
     },
     {
-        "Nome": "Army Green",
+        "Nome": "Army Green ",
         "TIPO": "L52",
         "RAW": "rgb(62, 75, 55)",
         "Red": 62,

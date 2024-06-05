@@ -19,9 +19,7 @@ window.addEventListener('DOMContentLoaded', function () {
     input.addEventListener('change', function () {
         var file = this.files[0];
         var url = URL.createObjectURL(file);
-
         image.src = url;
-
         if (cropper) {
             cropper.destroy();
         }
@@ -64,8 +62,6 @@ window.addEventListener('DOMContentLoaded', function () {
         cropper.destroy();
     });
 
-
-
     gridSizeSelect.addEventListener('change', function () {
         updateStep1();
     });
@@ -89,20 +85,17 @@ window.addEventListener('DOMContentLoaded', function () {
             .then(response => response.blob())
             .then(blob => {
                 image.src = URL.createObjectURL(blob);
-
             })
             .catch(error => {
                 console.error('Error:', error);
                 alert('Image processing failed');
             });
-
     }
 
     function updateStep2(interpolation) {
         var formData = new FormData();
         var url_backup = document.getElementById('hidden-preview').src;
         var gridSize = document.getElementById('gridSize').value;
-        console.log(url_backup);
         currentBlob = url_backup;
 
         fetch(url_backup)
@@ -132,85 +125,56 @@ window.addEventListener('DOMContentLoaded', function () {
 
     rangeColors.addEventListener('change', function () {
         document.getElementById('rangeValue').textContent = this.value;
-
         updateStep3(this.value);
     });
 
-    // rangeColors.addEventListener('change', function () {
-    //     updateStep3(this.value);
-
-
-    //     //     var previewContent = document.getElementById('preview').src;
-    //     //     // console.log('previewContesnt:', previewContent);
-
-    //     //     var xhr = new XMLHttpRequest();
-    //     //     xhr.open('POST', '/get_colors', true);
-    //     //     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    //     //     xhr.onload = function() {
-    //     //         if (this.status == 200) {
-    //     //             var data = JSON.parse(this.responseText).data;
-    //     //             var tbody = document.querySelector('tbody');
-    //     //             tbody.innerHTML = '';
-    //     //             data.forEach(function(item) {
-    //     //                 var tr = document.createElement('tr');
-
-    //     //                 var td1 = document.createElement('td');
-    //     //                 var label1 = document.createElement('label');
-    //     //                 label1.textContent = item.name;
-    //     //                 td1.appendChild(label1);
-
-    //     //                 var td2 = document.createElement('td');
-    //     //                 var div = document.createElement('div');
-    //     //                 div.className = 'circle';
-    //     //                 div.style.backgroundColor = item.color;
-    //     //                 td2.appendChild(div);
-
-    //     //                 var td3 = document.createElement('td');
-    //     //                 var label2 = document.createElement('label');
-    //     //                 label2.textContent = item.value;
-    //     //                 td3.appendChild(label2);
-
-    //     //                 tr.appendChild(td1);
-    //     //                 tr.appendChild(td2);
-    //     //                 tr.appendChild(td3);
-
-    //     //                 tbody.appendChild(tr);
-    //     //             });
-    //     //         }
-    //     //     };
-
-    //     //     var blob = fetch(previewContent)
-    //     //         .then(response => response.blob())
-    //     //         .then(blob => {
-    //     //             var formData = new FormData();
-    //     //             formData.append('rangeValue', this.value);
-    //     //             formData.append('previewContent', blob);
-    //     //             xhr.send(formData);
-    //     //         })
-    //     //         .catch(error => {
-    //     //             console.error('Error:', error);
-    //     //             alert('Image processing failed');
-    //     //         });
-    // });
     function updateStep3(colors) {
         var formData = new FormData();
-        // var url_backup = image;
-        console.log(currentBlob);
-
+        var gridSize = document.getElementById('gridSize').value;
         fetch(currentBlob)
             .then(response => response.blob())
             .then(blob => {
                 formData.append('file', blob);
                 formData.append('colors', colors);
-
+                formData.append('gridSize', gridSize);
                 return fetch('/get_colors', {
                     method: 'POST',
                     body: formData
                 });
             })
-            .then(response => response.blob())
-            .then(blob => {
-                image.src = URL.createObjectURL(blob);
+            .then(response => response.json())
+            .then(data => {
+                var imageBase64 = data.image;
+                image.src = 'data:image/png;base64,' + imageBase64;
+                data = data.data;
+                var tbody = document.querySelector('tbody');
+                tbody.innerHTML = '';
+                data.forEach(function (item) {
+                    console.log(item);
+                    var tr = document.createElement('tr');
+
+                    var td1 = document.createElement('td');
+                    var label1 = document.createElement('label');
+                    label1.textContent = item.name;
+                    td1.appendChild(label1);
+
+                    var td2 = document.createElement('td');
+                    var div = document.createElement('div');
+                    div.className = 'circle';
+                    div.style.backgroundColor = item.color;
+                    td2.appendChild(div);
+
+                    var td3 = document.createElement('td');
+                    var label2 = document.createElement('label');
+                    label2.textContent = item.value;
+                    td3.appendChild(label2);
+
+                    tr.appendChild(td1);
+                    tr.appendChild(td2);
+                    tr.appendChild(td3);
+
+                    tbody.appendChild(tr);
+                });
             })
             .catch(error => {
                 console.error('Error:', error);
